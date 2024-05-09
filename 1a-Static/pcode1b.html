@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    form {
+      margin: auto;
+      display: table;
+    }
+    form label, form input {
+      display: table-row;
+      margin: 10px 0;
+    }
+    td,tr{
+        padding: 7px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>User Registration Form</h1>
+<form id="registrationForm">
+  <table border="3px" style="border-collapse: collapse;">
+    <tr>
+      <td><label for="name">Name:</label></td>
+      <td><input type="text" id="name" name="name" required></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email:</label></td>
+      <td><input type="email" id="email" name="email" required></td>
+    </tr>
+    <tr>
+      <td><label for="phone">Phone:</label></td>
+      <td><input type="tel" id="phone" name="phone" pattern="[0-9]*" required></td>
+    </tr>
+  </table>
+  <button type="submit" style="margin: 20px;padding: 10px;">Register</button>
+</form>
+
+<h2>User Data Table</h2>
+<table id="dataTable" border="3px" style="border-collapse: collapse;" align="center">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody id="dataBody"></tbody>
+</table>
+
+<script>
+  // Load existing user data from localStorage
+  let userDataList = JSON.parse(localStorage.getItem('userDataList')) || [];
+
+  // Display existing user data
+  let dataBody = document.getElementById('dataBody');
+  userDataList.forEach(function(user) {
+    let row = dataBody.insertRow();
+    let nameCell = row.insertCell(0);
+    let emailCell = row.insertCell(1);
+    let phoneCell = row.insertCell(2);
+    nameCell.textContent = user.name;
+    emailCell.textContent = user.email;
+    phoneCell.textContent = user.phone;
+  });
+
+  // Handle form submission
+  document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    let formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value
+    };
+    
+    // Add new data to the list
+    userDataList.push(formData);
+
+    // Save updated data to localStorage
+    localStorage.setItem('userDataList', JSON.stringify(userDataList));
+
+    // Display updated data table
+    let row = dataBody.insertRow();
+    let nameCell = row.insertCell(0);
+    let emailCell = row.insertCell(1);
+    let phoneCell = row.insertCell(2);
+    nameCell.textContent = formData.name;
+    emailCell.textContent = formData.email;
+    phoneCell.textContent = formData.phone;
+
+    // Reset form
+    document.getElementById('registrationForm').reset();
+  });
+</script>
+</body>
+</html>

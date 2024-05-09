@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Sidebar styles */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #343a40;
+      padding-top: 50px;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      padding: 10px;
+    }
+    .sidebar li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .sidebar li a:hover {
+      color: #ccc;
+    }
+    /* Page content styles */
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    /* Card styles */
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <ul>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Orders</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Customers</a></li>
+    <li><a href="#">Settings</a></li>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="content">
+  <h1>Admin Dashboard</h1>
+  
+  <!-- Statistics cards -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Orders</h5>
+          <p class="card-text">350</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Products</h5>
+          <p class="card-text">120</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Customers</h5>
+          <p class="card-text">250</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

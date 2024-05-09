@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <style>
+    /* Add your custom CSS styles here */
+    /********** Logo CSS Starts **********/  
+    .logo {
+     width:100%;
+    }
+    /********** Logo CSS Ends **********/
+    /********** Main Menu CSS Starts **********/  
+    nav {
+        width: 100%;
+        float: left;
+        background: #ff5722;
+        padding:15px 0px;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 17px;
+        border-right: 1px solid #ffc3c3;
+        padding:2px 20px;
+    }
+    /********** Main Menu CSS Ends **********/
+
+    /********** Slider CSS Starts **********/  
+    .slider img {
+        width:100%;
+    }
+    /********** Slider CSS Ends **********/
+
+    /********** Gallery CSS Starts **********/  
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .gallery img {
+        width: 30%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    /********** Gallery CSS Ends **********/
+
+    /********** Section CSS Starts **********/  
+    section {
+        padding: 50px 0;
+        text-align: center;
+    }
+    section h2 {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        color: #ff5722;
+    }
+    section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    /********** Section CSS Ends **********/
+
+    /* CSS for Course Section */
+  #course {
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    color: #ff5722;
+  }
+
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course-box {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #ff5722;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .course-box p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+
+  /* CSS for Home Section */
+  #home {
+    background-color: #ece7e6;
+    color: #0f0b0b;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #1248f8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #36e30f;
+  }
+
+
+  /* Sidebar */
+  .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Adjust the size of the canvas */
+  .card-body canvas {
+    width: auto !important;
+    height: 200px !important; /* Adjust the height as needed */
+  }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+         <img src="Images/zcoer-gif1.gif" class="logo">
+    </div>
+  <!---------- Main Menu HTML Starts --------->
+    <nav>
+        <div class="container"> 
+        <a href="#home">Home</a> 
+        <a href="#gallery">Gallery</a> 
+        <a href="#admission">Admission</a> 
+        <a href="#course">Courses</a> 
+        <a href="#contact">Contact</a> 
+        <a href="#about">About us</a> 
+        </div>
+    </nav>
+    <!---------- Main Menu HTML Ends --------->
+
+    <!---------- Slider HTML Starts --------->
+    <div class="slider">
+        <img src="Images/Zeal1.jpg">
+    </div>
+    <!---------- Slider HTML Ends --------->
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Our College</h2>
+    <!-- Add content for home section here -->
+    <p>Established in 1996 and currently in its 25th year, Zeal Education Society is helmed by Hon. Shri S. M. Katkar, an eminent industrialist committed to the noble cause of education. The Society runs eight institutes right from Pre-primary to PhD courses. Over 7,000 students are currently enrolled with the Society in its various courses. Being an industry-oriented Technical Institute, it is continuously expanding its scope to introduce new and upcoming courses to ensure the best possible future for its students.</p>
+    <a class="btn btn-primary" href="Login.html" role="button">Inquiry</a>
+  </section>
+
+ <!-- Gallery Section -->
+ <section id="gallery">
+    <!-- Add content for Gallery section here -->
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="Images/zeal12.jpg"> 
+            <img src="Images/zeal4.jpg"> 
+            <img src="Images/zeal5.jpg">
+            <img src="Images/zeal6.jpg">
+            <img src="Images/zeal7.jpg">
+            <img src="Images/Zeal1.jpg"> 
+            <img src="Images/zeal9.jpg">
+            <img src="Images/zeal10.jpg">     
+            <img src="Images/zeal11.jpg"> 
+        </div>
+    </div>
+</section> 
+
+  <!-- Admission Section -->
+  <section id="admission">
+    <h2>Admission</h2>
+    <!-- Add content for admission section here -->
+    <p>The admissions to the UG and PG courses start soon after the results of H.S.C. and the final year Graduation are declared. Advertisement regarding the admissions for various courses of the institution is published in the regional and national (print and electronic) media; and the same is displayed on the Institutional Website http://www.zcoer.org The ‘Information Brochure’ is prepared and Hard copy of the ‘Information Brochure’ is provided to the students at the time of admission.
+
+        The admission for all the courses are merit based. The college fallows the University guidelines and the procedures. There are no management quota admissions. Admissions to all courses are given on the basis of merit of their previous qualifying examination.
+        
+        For admission student have to take registration & admission form, from the college & has to submit filled registration & admission from along with necessary document required for admission.
+        
+        After registration, the admissions lists are published on merit basis. The admission process is completed in a big hall in the presence of all students and admissions are finalized on the same day same time. Though there is provision for management quota, institution has been admitting students on the basis of merit only, without utilizing management quota. Hence the whole admission process is transparent.</p>
+  </section>
+
+   <!-- Course Section -->
+  <section id="course">
+    <div class="container">
+      <h2>Courses Offered</h2>
+      <!-- Add content for courses section here -->
+      <div class="course-container">
+        <div class="course-box">
+          <p>AIML</p>
+        </div>
+        <div class="course-box">
+          <p>AIDS</p>
+        </div>
+        <div class="course-box">
+          <p>CS</p>
+        </div>
+        <div class="course-box">
+          <p>Civil</p>
+        </div>
+        <div class="course-box">
+          <p>E&TC</p>
+        </div>
+        <div class="course-box">
+          <p>Electrical and Computer Science</p>
+        </div>
+        <div class="course-box">
+          <p>IT</p>
+        </div>
+        <div class="course-box">
+          <p>Mechanical</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <!-- Add content for contact section here -->
+    <p>ZEAL Education Socitey's</p>
+    <p>ZEAL College Of Engineering & Research</p>
+    <p>  Survey No.39, Narhe-Dhayari Road, Narhe, Pune-411 041</p>
+    <p>  75586 66663</p>
+    <p> 86699 00045</p>
+    <p>zcoer@zealeducation.com</p>
+    <p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <!-- Add content for about us section here -->
+    <h3>Welcome to Zeal College of Engineering & Research, Pune</h3>
+    <p>Zeal Education Society is established in year 1996 by Hon. Shri S. M. Katkar, an eminent industrialist committed to noble cause of education. Society runs eight institutes from Pre-primary to PhD courses. It caters to educational needs of more than 7000 students, and it’s continuously expanding to cope up with growing demands in the field of technical education.</p>
+    <p>ZCOER is established in 2007 which symbolized the beginning of new era in technical education. The college offers UG engineering degree courses in Civil Engineering, Computer Engineering, and Electrical Engineering, Information Technology, Electronics & Telecommunication, Artificial Intelligence & Machine Learning, Electronics & Computer Engineering  and Mechanical Engineering. The college also offers PG courses in Electrical Engineering (Power System), Electronics & Telecommunication (IoT & Sensor Systems), Mechanical Engineering (ME Design / Robotics & Automation) and Master of Business Administration. The institute is also granted as PhD research center in Computer Engineering, Electronics & Telecommunication and Mechanical Engineering under Savitribai Phule Pune University, Pune (SPPU) since 2013.</p>
+    <img src="Images/zeal3.png"> 
+  </section>
+  
+  
+
+<!-- Main content -->
+<div class="content">
+  <h1>Dashboard</h1>
+
+  <!-- Branch statistics -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">AIML</h5>
+          <p class="card-text">Intake: 60</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">AIDS</h5>
+          <p class="card-text">Intake: 60</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CIVIL</h5>
+          <p class="card-text">Intake: 120</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CS</h5>
+          <p class="card-text">Intake: 180</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">E&TC</h5>
+          <p class="card-text">Intake: 180</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Electrical</h5>
+          <p class="card-text">Intake: 120</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">IT</h5>
+          <p class="card-text">Intake: 120</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Mechanical</h5>
+          <p class="card-text">Intake: 240</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Main content -->
+<div class="content">
+  <h1>Graph</h1>
+
+  <!-- Branch statistics -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Intake per Branch</h5>
+          <canvas id="barChart" width="1600" height="800"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+<script>
+  // Chart data
+  const branchNames = ['AIML', 'AIDS', 'CIVIL', 'CS', 'E&TC', 'Electrical', 'IT', 'Mechanical'];
+  const intakeValues = [60, 60, 120, 180, 180, 120, 120, 240];
+
+  // Create bar chart
+  const ctx = document.getElementById('barChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: branchNames,
+      datasets: [{
+        label: 'Intake',
+        data: intakeValues,
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+</body>
+</html>

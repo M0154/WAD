@@ -1,0 +1,116 @@
+PS C:\Users\PL_22\Desktop\wad\angular> npm install @angular/cli@latest
+
+up to date in 1m
+
+47 packages are looking for funding
+  run `npm fund` for details       
+PS C:\Users\PL_22\Desktop\wad\angular> npm install @angular/cli@latest
+
+changed 5 packages, and audited 287 packages in 4s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\PL_22\Desktop\wad\angular> npm install @angular/cli@ update
+npm WARN deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.2.0: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+npm WARN deprecated set-value@0.3.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
+
+added 686 packages, and audited 973 packages in 60s
+
+54 packages are looking for funding
+  run `npm fund` for details
+
+52 vulnerabilities (7 low, 1 moderate, 41 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+PS C:\Users\PL_22\Desktop\wad\angular> ng new student
+? Which stylesheet format would you like to use? CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? Yes
+CREATE student/angular.json (2843 bytes)
+CREATE student/package.json (1266 bytes)
+CREATE student/README.md (1088 bytes)   
+CREATE student/tsconfig.json (889 bytes)
+CREATE student/.editorconfig (290 bytes)
+CREATE student/.gitignore (590 bytes)
+CREATE student/tsconfig.app.json (342 bytes)
+CREATE student/tsconfig.spec.json (287 bytes)
+CREATE student/server.ts (1759 bytes)
+CREATE student/.vscode/extensions.json (134 bytes)
+CREATE student/.vscode/launch.json (490 bytes)
+CREATE student/src/main.ts (256 bytes)
+CREATE student/src/index.html (306 bytes)
+CREATE student/src/main.server.ts (271 bytes)
+CREATE student/src/app/app.component.ts (316 bytes)
+CREATE student/src/app/app.config.ts (330 bytes)
+CREATE student/src/app/app.routes.ts (80 bytes)
+CREATE student/src/app/app.config.server.ts (361 bytes)
+CREATE student/src/assets/.gitkeep (0 bytes)
+✔ Packages installed successfully.
+'git' is not recognized as an internal or external command,
+operable program or batch file.
+PS C:\Users\PL_22\Desktop\wad\angular> ng serve
+Error: This command is not available when running the Angular CLI outside a workspace.
+PS C:\Users\PL_22\Desktop\wad\angular> ng serve
+Error: This command is not available when running the Angular CLI outside a workspace.
+PS C:\Users\PL_22\Desktop\wad\angular> ng -serve
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+PS C:\Users\PL_22\Desktop\wad\angular> cd .\student\
+PS C:\Users\PL_22\Desktop\wad\angular\student> ng -serve    
+Error: You need to specify a command before moving on. Use '--help' to view the available commands.
+PS C:\Users\PL_22\Desktop\wad\angular\student> ng serve     
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more  
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable
+
+Global setting: enabled
+Local setting: enabled
+Effective status: enabled
+Browser bundles
+Initial chunk files     | Names               |  Raw size
+polyfills.js            | polyfills           |  83.60 kB |
+main.js                 | main                |   1.46 kB |
+styles.css              | styles              |  95 bytes |
+
+                        | Initial total       |  85.15 kB
+
+Server bundles
+Initial chunk files     | Names               |  Raw size
+chunk-UY4QFD5G.mjs      | -                   |   1.70 MB |
+polyfills.server.mjs    | polyfills.server    | 555.05 kB |
+main.server.mjs         | main.server         | 194.37 kB |
+chunk-VPSODEBW.mjs      | -                   |   2.51 kB |
+render-utils.server.mjs | render-utils.server | 423 bytes |
+
+Lazy chunk files        | Names               |  Raw size
+chunk-OTT6LQ5K.mjs      | xhr2                |  39.10 kB |
+
+Application bundle generation complete. [3.480 seconds]
+
+Watch mode enabled. Watching for file changes...
+  ➜  Local:   http://localhost:4200/
+  ➜  press h + enter to show help
+PS C:\Users\PL_22\Desktop\wad\angular\student> ng g c register
+CREATE src/app/register/register.component.html (24 bytes)
+CREATE src/app/register/register.component.spec.ts (633 bytes)
+CREATE src/app/register/register.component.ts (254 bytes)
+CREATE src/app/register/register.component.css (0 bytes)
+PS C:\Users\PL_22\Desktop\wad\angular\student> 

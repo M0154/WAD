@@ -1,0 +1,9 @@
+Create folder on desktop 2b and another folder inside it name partb
+
+create Dockerfile
+create main.js file
+docker --version
+node main.js  
+docker build -t partb .
+docker images
+docker ps

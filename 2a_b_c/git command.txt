@@ -1,0 +1,14 @@
+git --version
+git init
+git add .
+git status
+git remote add origin "https.git"
+//git commit -m "Webpage"
+git config --global user.email "M"
+git config --global user.name "M"
+git commit -m "Hi"
+git status
+git push -u origin master 
+git branch
+git checkout master/main
+git branch new_branch
