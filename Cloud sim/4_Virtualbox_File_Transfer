@@ -1,0 +1,31 @@
+Virtual Box Practical
+
+open virtual box
+New 
+Name-VM1
+Type-Linux
+Version-Ubuntu (64-bit)
+next>next 
+Select Existing file option > Browse file > next
+finish
+go to setting 
+  1. In general> Advanced> Bidirectional last two options(Shared Clipboard & Drag'n'Drop)
+  2. Network > Select NAT Network(if on nat available> Tools>Network>Nat>Add
+In same manner create VM2
+Double click on Both VMs
+
+  VM1                                                  VM2
+login: vagrant                                      login: vagrant
+password: vagrant                                   password: vagrant
+ifcongig   (ip is 10.0.2.5)                         ifconfig   (10.0.2.7)
+ls                                                  ls
+touch filename.txt
+ls                                                  ls
+namo filename.txt
+  Hello Hi(content inside nano)
+  ctrl+s  & ctrl+x
+cat filename.txt
+scp filename.txt vagrant@10.0.2.7:/home/vagrant
+  10.0.2.7-ip of VM2
+ls                                                   ls    - you see filename.txt appears here(file transfer successfully)
+                                                    cat filename.txt
