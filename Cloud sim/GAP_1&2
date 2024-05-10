@@ -1,0 +1,17 @@
+Assignment-1
+Google App Engine
+Download java 1.8
+set path in environment variables
+Download eclipse2019-09 
+Help> Marketplace> Search cloud> Download GAE
+Restart eclipse(automatic)
+Click on Cloud sign New standard project> name & version as 1.8 
+run as see output
+Note- it requires an internet without any firewall for proper install
+Note- If local host bust Change port
+Note- localhost error change the directory form eclipse-workspace to any other
+
+
+
+Assignment-2
+go to main src browse and you will get index.html write code for webpage and run
