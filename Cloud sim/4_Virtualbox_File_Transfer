@@ -29,3 +29,4 @@ scp filename.txt vagrant@10.0.2.7:/home/vagrant
   10.0.2.7-ip of VM2
 ls                                                   ls    - you see filename.txt appears here(file transfer successfully)
                                                     cat filename.txt
+Note - Secure copy protocol (SCP)
