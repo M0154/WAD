@@ -30,3 +30,4 @@ scp filename.txt vagrant@10.0.2.7:/home/vagrant
 ls                                                   ls    - you see filename.txt appears here(file transfer successfully)
                                                      cat filename.txt
 Note - Secure copy protocol (SCP)
+The full form of SCP is "Secure Copy Protocol." It's a network protocol that facilitates secure file transfers between a local host and a remote host or between two remote hosts over an SSH (Secure Shell) connection.
