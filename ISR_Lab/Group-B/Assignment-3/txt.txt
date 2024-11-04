@@ -1,0 +1,84 @@
+from PIL import Image
+import os
+import matplotlib.pyplot as plt
+
+def color_to_rgb(alpha, red, green, blue):
+    # Convert individual alpha, red, green, and blue components to a single integer representing the RGB value
+    new_pixel = 0
+    new_pixel += alpha
+    new_pixel = (new_pixel << 8) + red
+    new_pixel = (new_pixel << 8) + green
+    new_pixel = (new_pixel << 8) + blue
+    return new_pixel
+
+def image_histogram(input_image):
+    # Create a new image to store the modified version
+    red_graph = Image.new('RGB', input_image.size)
+    pixels = input_image.load()
+    
+    for i in range(input_image.width):
+        for j in range(input_image.height):
+            # Get the pixel's red, green, and blue components
+            r, g, b = pixels[i, j]
+            
+            # Set the pixel in the new image, modifying it to keep only the blue component
+            red_graph.putpixel((i, j), (0, 0, b))
+
+    return red_graph
+
+def write_image(output, image):
+    # Save the modified image
+    image.save(f"{output}.jpg")
+
+def display_image(image, title):
+    # Convert image to RGB for display and show using matplotlib
+    plt.imshow(image)
+    plt.title(title)
+    plt.axis('off')  # Hide the axis
+    plt.show()
+
+if __name__ == "__main__":
+    # Load the original image
+    image_path = "123.jpg"
+    
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"Image file not found at {image_path}")
+    
+    original_image = Image.open(image_path)
+    
+    # Apply histogram extraction (modifying the blue component)
+    answer_image = image_histogram(original_image)
+    
+    # Display the original and modified images
+    display_image(original_image, "Original Image")
+    display_image(answer_image, "Modified Image (Blue Component)")
+
+    # Write the output image
+    write_image("featureExtraction", answer_image)
+
+
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage import io
+
+image_path = "123.jpg" # Replace with your image path
+image = cv2.imread(image_path)
+image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+def plot_color_histogram(image):
+    color = ('r', 'g', 'b')
+    plt.figure(figsize=(12, 6))
+    for i, col in enumerate(color):
+        hist = cv2.calcHist([image], [i], None, [256], [0, 256])
+        plt.plot(hist, color=col)
+        plt.xlim([0, 256])
+    plt.title('Color Histogram')
+    plt.xlabel('Pixel Intensity')
+    plt.ylabel('Frequency')
+    plt.show()
+
+# Plot color histogram
+plot_color_histogram(image_rgb)
+
